@@ -8,15 +8,16 @@
              BackgroundColor="Navy" >
     
     <!--As celulas prontas "TextCell" e "ImageCell" só podem usar suas propriedades.
-     A celula "ViewCell" pode personalizar a vontade(como abaixo)-->
-    <ListView x:Name="listview" SeparatorColor="White">
+     A celula "ViewCell" pode personalizar a vontade(como abaixo)
+     A propriedade "HasUnevenRows" faz com que o tamanho das linhas se adeque ao seu conteúdo-->
+    <ListView x:Name="listview" SeparatorColor="White" HasUnevenRows="True">
         
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <StackLayout Orientation="Horizontal" BackgroundColor="Green" >
+                    <StackLayout Orientation="Horizontal" Padding="5" >
                         <Image Source="{Binding Imagem}" />
-                        <StackLayout>
+                        <StackLayout HorizontalOptions="StartAndExpand">
                             <Label Text="{Binding Nome}" TextColor="Silver" FontSize="Medium" />
                             <Label Text="{Binding Pontos}" TextColor="Yellow" FontSize="Small" />
                         </StackLayout>
