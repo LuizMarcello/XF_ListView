@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XF_ListView.ListViewPage3"
+             BackgroundColor="Navy" >
+    
+    <!--As celulas prontas "TextCell" e "ImageCell" só podem usar suas propriedades.
+     A celula "ViewCell" pode personalizar a vontade(como abaixo)-->
+    <ListView x:Name="listview" SeparatorColor="White">
+        
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" BackgroundColor="Green" >
+                        <Image Source="{Binding Imagem}" />
+                        <StackLayout>
+                            <Label Text="{Binding Nome}" TextColor="Silver" FontSize="Medium" />
+                            <Label Text="{Binding Pontos}" TextColor="Yellow" FontSize="Small" />
+                        </StackLayout>
+                        <Button Text="Selecionar" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        
+    </ListView>
+
+</ContentPage>
+                            

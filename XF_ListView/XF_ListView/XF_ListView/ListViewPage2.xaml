@@ -4,20 +4,23 @@
              x:Class="XF_ListView.ListViewPage2"
              BackgroundColor="Black">
 
-    <ListView x:Name="listview" SeparatorColor="White">
-
+    <ListView x:Name="listView" SeparatorColor="White">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <ImageCell Text="{Binding Nome}"
-                          Detail="{Binding Pontos}"
-                          ImageSource="{Binding Imagem}" 
-                          TextColor="Yellow"
-                          DetailColor="Silver"
-                          />
+                <ImageCell Text="{Binding Nome}" 
+                           Detail="{Binding Pontos}"
+                           ImageSource="{Binding Imagem}"
+                           TextColor="Yellow"
+                           DetailColor="Silver" />
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-
+    
 </ContentPage>
+   
+
+
+
+                   
                           
                           
