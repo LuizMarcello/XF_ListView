@@ -12,7 +12,11 @@
      A propriedade "HasUnevenRows" faz com que o tamanho das linhas se adeque ao seu conteúdo-->
     <ListView x:Name="listview" HasUnevenRows="True" 
               IsGroupingEnabled="True"
-              GroupDisplayBinding="{Binding Nome}" >
+              GroupDisplayBinding="{Binding Nome}"
+              Header="Classificação do Brasileirão"
+              Footer="------------------- FIM ---------------------"
+              ItemSelected="listview_ItemSelected"
+              ItemTapped="listview_ItemTapped" >
 
         <ListView.ItemTemplate>
             <DataTemplate>

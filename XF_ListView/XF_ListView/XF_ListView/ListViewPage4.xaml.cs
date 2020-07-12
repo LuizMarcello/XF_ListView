@@ -45,14 +45,33 @@ namespace XF_ListView
                 },
             };
         }
+
+        private void listview_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            //Convertedo o item selecionado para o tipo "Time":
+            //var time = e.SelectedItem as Time;
+            //ou:
+            Time time = e.SelectedItem as Time;
+            DisplayAlert("Evento ItemSelected", time.Nome, "OK");
+            //listview.SelectedItem = null;
+        }
+
+        private void listview_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            //Convertedo o item selecionado para o tipo "Time":
+            //var time = e.Item as Time;
+            //ou:
+            Time time = e.Item as Time;
+            DisplayAlert("Evento ItemTapped", time.Nome, "OK");
+        }
     }
 }
 
 
-                
-                
-                
-                
-                
-           
+
+
+
+
+
+
 
