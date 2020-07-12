@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="XF_ListView.ListViewPage4"
+             BackgroundColor="White" >
+
+    <!--As celulas prontas "TextCell" e "ImageCell" só podem usar suas propriedades.
+     A celula "ViewCell" pode personalizar a vontade(como abaixo)
+     A propriedade "HasUnevenRows" faz com que o tamanho das linhas se adeque ao seu conteúdo-->
+    <ListView x:Name="listview" HasUnevenRows="True" 
+              IsGroupingEnabled="True"
+              GroupDisplayBinding="{Binding Nome}" >
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" Padding="5" >
+                        <Image Source="{Binding Imagem}" />
+                        <Label Text="{Binding Pontos}" TextColor="Black" FontAttributes="Bold" />
+                        <Label Text="{Binding Nome}" TextColor="Navy" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+
+    </ListView>
+</ContentPage>
+                        
+                        
+                        
+                        
