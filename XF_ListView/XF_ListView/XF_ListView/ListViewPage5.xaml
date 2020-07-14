@@ -4,7 +4,7 @@
              x:Class="XF_ListView.ListViewPage5"
              BackgroundColor="Navy">
 
-    <ListView x:Name="listview">
+    <ListView x:Name="listview" IsPullToRefreshEnabled="True" Refreshing="lvw_Refreshing">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ImageCell Text="{Binding Nome}" 

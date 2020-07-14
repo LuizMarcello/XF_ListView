@@ -14,12 +14,10 @@ namespace XF_ListView
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListViewPage5 : ContentPage
     {
-        private ObservableCollection<Time> _times;
-        public ListViewPage5()
+        private ObservableCollection<Time> _timess;
+        private ObservableCollection<Time> GetTimess()
         {
-            InitializeComponent();
-
-            _times = new ObservableCollection<Time>
+            _timess = new ObservableCollection<Time>
             {
                 new Time { Nome="Palmeiras", Pontos=69, Imagem="http://macoratti.net/Imagens/times/palmeiras64.png" },
                 new Time { Nome="Santos", Pontos=55, Imagem="http://macoratti.net/Imagens/times/palmeiras64.png" },
@@ -28,7 +26,14 @@ namespace XF_ListView
                 new Time { Nome="Botafogo", Pontos=74, Imagem="http://macoratti.net/Imagens/times/palmeiras64.png"}
             };
 
-            listview.ItemsSource = _times;
+            return _timess;
+        }
+
+        public ListViewPage5()
+        {
+            InitializeComponent();
+
+            listview.ItemsSource = GetTimess();
         }
 
         private void Exibir_Clicked(object sender, EventArgs e)
@@ -41,7 +46,16 @@ namespace XF_ListView
         private void Deletar_Clicked(object sender, EventArgs e)
         {
             Time timee = (sender as MenuItem).CommandParameter as Time;
-            _times.Remove(timee);
+            _timess.Remove(timee);
+        }
+
+        private void lvw_Refreshing(object sender, EventArgs e)
+        {
+            listview.ItemsSource = GetTimess();
+            //listview.IsRefreshing = false;
+            listview.EndRefresh();
         }
     }
 }
+
+            
