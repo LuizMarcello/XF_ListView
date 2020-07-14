@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="XF_ListView.ListViewPage4"
-             BackgroundColor="White" >
+             BackgroundColor="Navy" >
 
     <!--As celulas prontas "TextCell" e "ImageCell" só podem usar suas propriedades.
      A celula "ViewCell" pode personalizar a vontade(como abaixo)
