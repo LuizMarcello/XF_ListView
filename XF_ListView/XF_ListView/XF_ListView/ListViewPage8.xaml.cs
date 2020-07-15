@@ -22,7 +22,7 @@ namespace XF_ListView
                 new Time { Nome="Santos", Pontos=55, Imagem="http://macoratti.net/Imagens/times/palmeiras64.png" },
                 new Time { Nome="Flamengo", Pontos=33, Imagem="http://macoratti.net/Imagens/times/palmeiras64.png" },
                 new Time { Nome="Atletico", Pontos=38, Imagem="http://macoratti.net/Imagens/times/palmeiras64.png" },
-                new Time { Nome="Botafogo", Pontos=74, Imagem="http://macoratti.net/Imagens/times/palmeiras64.png" }
+                new Time { Nome="Botafogo", Pontos=74, Imagem="http://macoratti.net/Imagens/times/palmeiras64.png" },
                 new Time { Nome="America", Pontos=46, Imagem="http://macoratti.net/Imagens/times/palmeiras64.png" }
             };
 
