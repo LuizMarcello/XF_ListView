@@ -7,7 +7,6 @@
              x:Class="XF_ListView.ListView_Exercicio3"
              BackgroundColor="White" >
     
-    <!--<StackLayout>-->
         <ListView x:Name="listview" SeparatorColor="White" HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -19,9 +18,10 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    <!--</StackLayout>-->
     
 </ContentPage>
+    
+    
 
 
             
