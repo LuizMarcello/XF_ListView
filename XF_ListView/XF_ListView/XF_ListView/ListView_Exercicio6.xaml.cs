@@ -16,7 +16,7 @@ namespace XF_ListView
         public ListView_Exercicio6()
         {
             InitializeComponent();
-            listview.ItemsSource = GetProdutosAgrupados();
+            //listview.ItemsSource = GetProdutosAgrupados();
             
         }
 
