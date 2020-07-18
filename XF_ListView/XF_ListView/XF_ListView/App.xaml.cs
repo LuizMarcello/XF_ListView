@@ -10,7 +10,7 @@ namespace XF_ListView
         {
             InitializeComponent();
 
-            MainPage = new ListView_Exercicio8();
+            MainPage = new ListView_Exercicio9();
         }
 
         protected override void OnStart()

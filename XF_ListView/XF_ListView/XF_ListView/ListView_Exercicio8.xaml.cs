@@ -45,6 +45,13 @@ namespace XF_ListView
             var produto = (sender as MenuItem).CommandParameter as Produto;
             produtoss.Remove(produto);
         }
+
+        private void lvw_Refreshing(object sender, EventArgs e)
+        {
+            listview.ItemsSource = GetProdutos();
+            listview.IsRefreshing = false;
+            //listview.EndRefresh();
+        }
     }
 }
 

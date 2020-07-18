@@ -7,7 +7,7 @@
              x:Class="XF_ListView.ListView_Exercicio8"
              BackgroundColor="White" >
 
-    <ListView x:Name="listview" SeparatorColor="White" HasUnevenRows="True">
+    <ListView x:Name="listview" SeparatorColor="Black" HasUnevenRows="True" IsPullToRefreshEnabled="True" Refreshing="lvw_Refreshing">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ImageCell Text="{Binding Nome}"
